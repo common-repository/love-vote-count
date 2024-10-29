@@ -1,0 +1,79 @@
+/* Voting Styles */
+button.vote-button {
+	  background: none repeat scroll 0 0 #E26060;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 2px 10px !important;
+  -webkit-transition: all 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.3s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.3s ease-out; 
+}
+button.vote-button:hover {
+	background:#424242;
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;  
+       -o-transition: all 0.3s ease-out;  
+          transition: all 0.3s ease-out; 
+}
+button.vote-button .icon-heart {
+	margin-right:3px;
+}
+
+.already-voted {
+    background: none repeat scroll 0 0 #424242;
+    color: #FFFFFF;
+    display: none;
+    font-size: 13.5px;
+    font-weight: bold;
+    left: 50%;
+    margin-left: -100px;
+    padding: 10px 0;
+    position: fixed;
+    text-align: center;
+    top: 80px;
+    width: 200px;
+    z-index: 999999;
+}
+
+.vote-count {
+    display: inline-block;
+    line-height: 1;
+}
+
+.lvc_voting_top_list > li > span {
+	float:right;
+}
+
+/* Vector based heart font */
+@font-face {
+	font-family: 'heart';
+	src:url('../fonts/heart.eot?i2qt47');
+	src:url('../fonts/heart.eot?#iefixi2qt47') format('embedded-opentype'),
+		url('../fonts/heart.woff?i2qt47') format('woff'),
+		url('../fonts/heart.ttf?i2qt47') format('truetype'),
+		url('../fonts/heart.svg?i2qt47#heart') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'heart';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+	content: "\e616";
+}
